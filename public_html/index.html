@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Creative PortFolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- hoja de estilo de Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster+Two:700italic' rel='stylesheet' type='text/css'>
+        <style>
+            .fondo1{
+                height: 700px; 
+                background-image: url(imagenes/fondo1.png);
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                -o-background-size: cover;
+                
+            }
+            .fondo2{
+                background-color: #db5941;
+            }
+            .blanco{
+                color:white;
+                font-family: "Lato" ;
+                font-weight: bold; 
+            }
+            .blancoLight{
+                color:white;
+                font-family: "Lato" ;
+            }
+            .blancoLobster{
+                font-family: "Lobster Two", cursive;
+                color:white;
+            }
+            h2{
+                font-size: 16px;
+                font-size: 6vw;
+            }
+            h1{
+                font-size: 16px;
+                font-size: 8vw;
+            }
+            h3{
+                font-size: 16px;
+                font-size: 3vw;
+            }
+            .miH4{
+                font-size: 16px;
+                font-size: 3vw;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="uno" class="fondo1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 " >
+                        <h2 class="text-center blanco" style="margin-top: 15%;">PSD CONCEPT</h2>
+                        <h1 class="text-center blanco" >CREATIVE PORTFOLIO</h1>
+                        <p  class="text-center blancoLight miH4" >WEB DESIGN-DEVELOPMENT-MARKETING</p>
+                        
+                    </div>
+                </div>
+                <br>
+                <!-- version para cuando es pequeño-->
+                <div class="row hidden-lg hidden-md hidden-sm">
+                    <div class="col-xs-5  " >    
+                    </div>
+                    <div id="cambia2xs" class="col-xs-2  " >
+                        <img src="imagenes/flechaAbajo.png" class="img-responsive">
+                    </div>
+                    <div class="col-xs-5  " >    
+                    </div>
+                </div>
+                <!-- version para cuando no es pequeño-->
+                <div class="row hidden-xs" style="text-align: center;">
+                    <div class="col-sm-5 col-md-5 col-lg-5 " >  
+                    </div>
+                    <div id="cambia2" class="col-sm-2 col-md-2 col-lg-2 " >
+                        <img src="imagenes/flechaAbajo.png" >
+                    </div>
+                    <div class="col-sm-5 col-md-5 col-lg-5 " >
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand blancoLobster" href="#">Creative</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        
+        
+        <section id="dos" class="fondo2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 " ></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 " >
+                        <h3 class="text-center blancoLight" >SERVICES</h3>
+                        <p  class="text-center blancoLight" >WEB DESIGN DEVELOPMENT</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 " ></div>
+                </div>
+                <!-- version para cuando es pequeño-->
+                <div class="row hidden-lg hidden-md hidden-sm">
+                    <div class="col-xs-4  " >
+                        <img src="imagenes/lapiz.png" class="img-responsive">
+                    </div>
+                    <div class="col-xs-4  " >
+                        <img src="imagenes/corazon.png" class="img-responsive">
+                    </div>
+                    <div class="col-xs-4  " >
+                        <img src="imagenes/telefono.png" class="img-responsive">
+                    </div>
+                </div>
+                <!-- version para cuando no es pequeño-->
+                <div class="row hidden-xs" style="text-align: center;">
+                    <div class="col-sm-4 col-md-4 col-lg-4 " >
+                        <img src="imagenes/lapiz.png" >
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 " >
+                        <img src="imagenes/corazon.png" >
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 " >
+                        <img src="imagenes/telefono.png" >
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="js/jquery-1.12.0.min.js"></script>   
+        <script>
+            $('#cambia2,#cambia2xs').click(function(){
+                $('html,body').animate({
+                    scrollTop: $('#dos').offset().top
+                },1200);
+            });
+        </script>
+        
+        
+    </body>
+</html>
